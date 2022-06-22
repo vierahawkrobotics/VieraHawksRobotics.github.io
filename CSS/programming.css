@@ -1,0 +1,18 @@
+header {
+    position: relative;
+    height: 20vmin;
+}
+header h1 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 5vmin;
+    width: 75vmin;
+    position: absolute;
+    bottom: 0%;
+    padding-left: 1em;
+}
+h1 {
+    text-align: center;
+}
