@@ -226,6 +226,9 @@ ul.sub-menu {
 .no-indent {
   text-indent:0;
 }
+.padding {
+    padding-top: 10px;    
+}
 /*
 Uses alpha order for ordering properties
 Declarations ordered by placement in markup
