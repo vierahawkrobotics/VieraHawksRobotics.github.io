@@ -13,7 +13,7 @@
     <script type="text/javascript" src="JavaScript/pictures.js"></script>
 </head>
 
-<body>
+<body onload="currentSlide(1)">
     <nav>
         <img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo512x512.png" alt="The Hawk Robotics Program Logo" class="logo mobile">
         <label class="logo-description mobile">Navigation</label>
@@ -64,7 +64,6 @@
                 <label for="check-contact" class="checkbtn">Contact</label>
                 <ul class="sub-menu">
                     <li><a href="social-media.html">Social Media</a></li>
-			<li><a href="contact-us.html">Contact Us!</a></li>
                     <li><a href="join-us.html">Join Us</a></li>
                 </ul>
             </li>
@@ -78,25 +77,29 @@
             </li>
         </ul>
 	</nav>
+    <header>
+        <img class="header-image" src="SiteImages/header.jpg">
+        <h1>Hawk Robotics : Wingspan, Team 7431</h1>
+    </header>
 	 <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="img1.jpg" style="width:100%">
+    <img src="SiteImages//robot.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="img2.jpg" style="width:100%">
+    <img src="SiteImages//outreach.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
+    <img src="SiteImages//robot.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
@@ -108,6 +111,7 @@
 
 <!-- The dots/circles -->
 <div style="text-align:center">
+
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
