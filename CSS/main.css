@@ -229,6 +229,12 @@ ul.sub-menu {
 .padding {
     padding-top: 10px;    
 }
+.handbook {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    padding: 80px;
+}
 /*
 Uses alpha order for ordering properties
 Declarations ordered by placement in markup
