@@ -1,6 +1,6 @@
 name = "wingspan7431"
 type = "webpack"
-workers_dev = false
+workers_dev = true
 route = ""
 zone_id = ""
 
