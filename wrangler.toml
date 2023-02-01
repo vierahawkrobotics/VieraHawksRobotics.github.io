@@ -1,4 +1,4 @@
-name = "Wingspan7431"
+name = "wingspan7431"
 type = "webpack"
 workers_dev = false
 route = ""
