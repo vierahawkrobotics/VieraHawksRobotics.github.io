@@ -1,0 +1,9 @@
+name = "Wingspan7431"
+type = "webpack"
+workers_dev = false
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./site"
+entry-point = "workers-site"
