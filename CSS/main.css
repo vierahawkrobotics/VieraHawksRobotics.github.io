@@ -48,60 +48,53 @@ p {
   text-indent:2em;
 }
 /* Navigation Styles */
-nav {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0, transparent 100%);
-    font-weight: 500;
-    position: absolute;
-    user-select: none;
-    width: 100%;
-    z-index: 999;
+.openbtn {
+    position: fixed;
+    z-index:999;
+    color: #fff;
+    font-size: 36px;
+    background-color:transparent;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-nav ul {
-    padding-inline-start: 0;
-}
-ul.main-menu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-nav li {
-    list-style-type: none;
-    padding: 1em 1.5vw;
+.sidenav {
+    height: 100%;
+    width: 0; /*chagnes with JS*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    background-color: #0d4411;
+    transition: 0.5s;
     text-decoration: none;
+    overflow-x:hidden;
 }
-.main-menu>li {
-    width: 6em;
-    text-align: center;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 28px;
+    color: #121412;
+    transition: 0.3s;
+    display: block;   
 }
-.nav-image {
-    display: block;
-    height: 3em;
-    padding: 0 1vw;
-    position: relative;
-    top: 2px;
+.sidenav a:hover {
+    color: #fff;
 }
-ul.sub-menu {
-    display: none;
-    margin-left: -1.5vw;
+.sidenav .closebtn{
     position: absolute;
-    top: 100%;
-    text-align: left;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
-.sub-menu li {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 200ms;
+#main {
+    transition: .5s;
+    padding: 20px;
 }
-.mobile, .check {
-    display: none;
-}
-.checkbtn {
-    pointer-events: none;
-}
-.sub-menu li:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
+
 @media only screen and (min-width:957px) {
-    nav li:hover {
+    av li:hover {
         background: rgba(0, 0, 0, 0.7);
     }
     ul.main-menu>li:hover ul.sub-menu {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HOME | Hawk Robotics</title>
@@ -8,78 +7,31 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <script type="text/javascript" src="JavaScript/main.js"></script>
+    
 </head>
-
 <body>
-    <nav>
-        <img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo512x512.png" alt="The Hawk Robotics Program Logo" class="logo mobile">
-        <label class="logo-description mobile">Navigation</label>
-        <input type="checkbox" class="check" id="check-main" class="mobile">
-        <label for="check-main" class="checkbtn-main">
-            <div class="checkbtn-main-icon"></div>
-        </label>
-        <ul class="main-menu">
-            <li>
-                <input type="checkbox" class="check" id="check-about">
-                <label for="check-about" class="checkbtn">About</label>
-                <ul class="sub-menu">
-                    <li><a href="about-FIRST.html">About FIRST</a></li>
-                    <li><a href="wingspan.html">FRC Wingspan</a></li>
-                    <li><a href="FLL-team.html">Our FLL Teams</a></li>
-
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-resources">
-                <label for="check-resources" class="checkbtn">Resources</label>
-                <ul class="sub-menu">
-
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="handbook.html">Safety Handbook</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-gallery">
-                <label for="check-gallery" class="checkbtn">Gallery</label>
-                <ul class="sub-menu">
-
-                    <li><a href="photos.html">Photo Archive</a></li>
-                    
-                </ul>
-            </li>
-            <a href="index.html"><img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo256x256.png" alt="The Hawk Robotics Program Logo" class="nav-image"></a>
-            <li>
-                <input type="checkbox" class="check" id="check-sponsors">
-                <label for="check-sponsors" class="checkbtn">Sponsors</label>
-                <ul class="sub-menu">
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-contact">
-                <label for="check-contact" class="checkbtn">Contact</label>
-                <ul class="sub-menu">
-                    <li><a href="social-media.html">Social Media</a></li>
-                   
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-outreach">
-                <label for="check-outreach" class="checkbtn">Outreach</label>
-                <ul class="sub-menu">
-                    <li><a href="past-events.html">Past Events</a></li>
-                    
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <!--Sidebar-->
+    <div class="sidenav" id="sidenav">
+        <script>
+            //makes the sidebar functional
+            function openSidebar() {
+                document.getElementById('sidenav').style.width="250px";
+            }
+            function closeSidebar() {
+                document.getElementById('sidenav').style.width="0px";
+            }
+        </script>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+            <a id="navlink" href="handbook.html">Handbook</a>
+    </div>
+    <!--Open Sidebar-->
+    <button type="button" class="openbtn" onclick="openSidebar()">&equiv;</button>
+    <!--End of Sidebar-->
+    <div class="main">
     <header>
-        <img class="header-image" src="SiteImages/header.jpg">
+        <img class="header-image"   src="SiteImages/header.jpg">
         <h1>Hawk Robotics : Wingspan, Team 7431</h1>
     </header>
-    <main>
         <section class="row l">
             <!--Mission Statement -->
             <img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo256x256.png" width="150" height="150" class="homepage-row-img">
@@ -161,7 +113,9 @@
             </div>
             <img src="SiteImages/vhsLogo.jpg" class="homepage-row-img">
         </section>
-    </main>
+    </div>
+</div>
     <footer>
     </footer>
-</body></html>
+</body>
+</html>
