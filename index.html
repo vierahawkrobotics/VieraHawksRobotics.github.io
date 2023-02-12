@@ -7,29 +7,33 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/index.css">
-    
+    <script type="text/javascript" src="JavaScript/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 </head>
 <body>
     <!--Sidebar-->
     <div class="sidenav" id="sidenav">
-        <script>
-            //makes the sidebar functional
-            function openSidebar() {
-                document.getElementById('sidenav').style.width="250px";
-            }
-            function closeSidebar() {
-                document.getElementById('sidenav').style.width="0px";
-            }
-        </script>
             <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
-            <a id="navlink" href="handbook.html">Handbook</a>
+            <header>
+                <img src="SiteImages\HawkRoboticsLogos\HawkRoboticsLogo256x256.png" width="150" height="150">
+                <span><strong>Wingspan Team#7431</strong></span>
+            </header>
+            <hr>
+            <a href="index.html">HOME</a>
+            <a href="about-FIRST.html">ABOUT FIRST</a>
+            <a href="photos.html">PHOTO GALLERY</a>
+            <a href="handbook.html">HANDBOOK</a>
+            <a href="calender.html">CALENDER</a>
+            <a href="social-media.html">REACH OUT</a>
     </div>
     <!--Open Sidebar-->
-    <button type="button" class="openbtn" onclick="openSidebar()">&equiv;</button>
+    <div type="button" class="openbtn" onclick="openSidebar()">
+    <i class="fas fa-bars"></i>
+    </div>
     <!--End of Sidebar-->
     <div class="main">
     <header>
-        <img class="header-image"   src="SiteImages/header.jpg">
+        <img class="header-image" src="SiteImages/header.jpg">
         <h1>Hawk Robotics : Wingspan, Team 7431</h1>
     </header>
         <section class="row l">
