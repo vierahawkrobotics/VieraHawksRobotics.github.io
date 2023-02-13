@@ -42,166 +42,79 @@ body {
     font-family: "Raleway", "Arial", sans-serif;
     min-width: 320px;
     overflow-x: hidden;
-    font-size: 20px;
+    font-size: 24px;
 }
 p {
   text-indent:2em;
 }
 /* Navigation Styles */
-nav {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0, transparent 100%);
-    font-weight: 500;
-    position: absolute;
-    user-select: none;
-    width: 100%;
-    z-index: 999;
+.openbtn {
+    position: fixed;
+    z-index:1;
+    color: #fff;
+    font-size: 36px;
+    padding:10px;
 }
-nav ul {
-    padding-inline-start: 0;
-}
-ul.main-menu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-nav li {
-    list-style-type: none;
-    padding: 1em 1.5vw;
+.sidenav {
+    height: 100%;
+    width: 0; /*chagnes with JS*/
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    background-color: #0d4411;
+    transition: 0.5s;
     text-decoration: none;
+    overflow-x:hidden;
 }
-.main-menu>li {
-    width: 6em;
+.sidenav a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    color: #fff;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
     text-align: center;
 }
-.nav-image {
-    display: block;
-    height: 3em;
-    padding: 0 1vw;
-    position: relative;
-    top: 2px;
+.sidenav a:hover {
+    background-color: #20973a;
 }
-ul.sub-menu {
-    display: none;
-    margin-left: -1.5vw;
+.sidenav .closebtn{
     position: absolute;
-    top: 100%;
-    text-align: left;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
-.sub-menu li {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 200ms;
+/* Sidenav header */
+.sidenav header {
+    background-color: #20973a;
+    height:235px;
+    overflow-y: hidden;   
 }
-.mobile, .check {
-    display: none;
+.sidenav header span{
+    font-size: 25px;
+    font-family: inherit;
+    padding-bottom: 5px;
+    position: absolute;
+    padding-top: 5px;
+    text-align: center;
 }
-.checkbtn {
-    pointer-events: none;
+.sidenav header img {
+    display:block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 50px;
 }
-.sub-menu li:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-@media only screen and (min-width:957px) {
-    nav li:hover {
-        background: rgba(0, 0, 0, 0.7);
-    }
-    ul.main-menu>li:hover ul.sub-menu {
-        display: block;
-    }
-}
+/*Mobile Stuff*/
 @media only screen and (max-width:957px) {
-    .mobile {
-        display: inline-block;
+    body {
+        overflow-x: hidden;
     }
-    nav {
-        background: var(--light-green);
-    }
-    .logo {
-        height: 40px;
-        padding: 5px 1vw;
-        float: left;
-    }
-    .logo-description {
-        font-size: 20px;
-        padding: 13px 0;
-    }
-    /*Animated navigation button styles*/
-    .checkbtn-main {
-        float: right;
-        padding: 0 3vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 51px;
-        cursor: pointer;
-    }
-    .checkbtn-main-icon {
-        width: 30px;
-        height: 3px;
-        background: #fff;
-        border-radius: 5px;
-        transition: all .1s ease-in-out;
-    }
-    .checkbtn-main-icon::before, .checkbtn-main-icon::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background: #fff;
-        border-radius: 5px;
-        transition: all .2s ease-in-out;
-    }
-    .checkbtn-main-icon::before {
-        transform: translateY(-8px);
-    }
-    .checkbtn-main-icon::after {
-        transform: translateY(8px);
-    }
-    .checkbtn-main.open .checkbtn-main-icon {
-        background: transparent;
-        box-shadow: none;
-    }
-    .checkbtn-main.open .checkbtn-main-icon::before {
-        transform: rotate(45deg);
-    }
-    .checkbtn-main.open .checkbtn-main-icon::after {
-        transform: rotate(-45deg);
-    }
-    /*END animated navigation button styles*/
-    ul.main-menu {
-        display: none;
-        cursor: pointer;
-    }
-    .nav-image {
-        display: none;
-    }
-    #check-main:checked~ul.main-menu {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav li {
-        padding: 0 0;
-    }
-    nav li a, label {
-        padding: 1em 0;
-        display: block;
-    }
-    .main-menu>li {
+    header{
         width: 100%;
-    }
-    ul.sub-menu {
-        margin-left: 0;
-    }
-    .sub-menu li {
-        text-align: center;
-    }
-    .check:checked~ul {
-        display: block;
-        position: relative;
-    }
-    .checkbtn {
-        pointer-events: auto;
     }
 }
 /* End Navigation Styles */

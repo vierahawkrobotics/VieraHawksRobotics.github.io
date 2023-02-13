@@ -8,73 +8,33 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/photos.css">
     <script type="text/javascript" src="JavaScript/main.js"></script>
+    <script type="text/javascript" src="JavaScript/pictures.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 </head>
 
 <body onload="currentSlide(1)">
-    <nav>
-        <img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo512x512.png" alt="The Hawk Robotics Program Logo" class="logo mobile">
-        <label class="logo-description mobile">Navigation</label>
-        <input type="checkbox" class="check" id="check-main" class="mobile">
-        <label for="check-main" class="checkbtn-main">
-            <div class="checkbtn-main-icon"></div>
-        </label>
-        <ul class="main-menu">
-            <li>
-                <input type="checkbox" class="check" id="check-about">
-                <label for="check-about" class="checkbtn">About</label>
-                <ul class="sub-menu">
-                    <li><a href="about-FIRST.html">About FIRST</a></li>
-                    <li><a href="wingspan.html">FRC Wingspan</a></li>
-                    <li><a href="FLL-team.html">Our FLL Teams</a></li>
-
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-resources">
-                <label for="check-resources" class="checkbtn">Resources</label>
-                <ul class="sub-menu">
-
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="handbook.html">Safety Handbook</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-gallery">
-                <label for="check-gallery" class="checkbtn">Gallery</label>
-                <ul class="sub-menu">
-
-                    <li><a href="photos.html">Photo Archive</a></li>
-                    
-                </ul>
-            </li>
-            <a href="index.html"><img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo256x256.png" alt="The Hawk Robotics Program Logo" class="nav-image"></a>
-            <li>
-                <input type="checkbox" class="check" id="check-sponsors">
-                <label for="check-sponsors" class="checkbtn">Sponsors</label>
-                <ul class="sub-menu">
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-contact">
-                <label for="check-contact" class="checkbtn">Contact</label>
-                <ul class="sub-menu">
-                    <li><a href="social-media.html">Social Media</a></li>
-                   
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-outreach">
-                <label for="check-outreach" class="checkbtn">Outreach</label>
-                <ul class="sub-menu">
-                    <li><a href="past-events.html">Past Events</a></li>
-                    
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <!--Sidebar-->
+    <div class="sidenav" id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <header>
+            <img src="SiteImages\HawkRoboticsLogos\HawkRoboticsLogo256x256.png" width="150" height="150">
+            <span><strong>Wingspan Team#7431</strong></span>
+        </header>
+        <hr>
+        <a href="index.html">HOME</a>
+        <a href="about-FIRST.html">ABOUT FIRST</a>
+        <a href="photos.html">PHOTO GALLERY</a>
+        <a href="handbook.html">HANDBOOK</a>
+        <a href="calender.html">CALENDER</a>
+        <a href="social-media.html">REACH OUT</a>
+</div>
+<!--Open Sidebar-->
+<div type="button" class="openbtn" onclick="openSidebar()">
+<i class="fas fa-bars"></i>
+</div>
+<!--End of Sidebar-->
     <header>
         <img class="header-image" src="SiteImages/header.jpg">
         <h1>Hawk Robotics : Wingspan, Team 7431</h1>

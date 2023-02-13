@@ -6,101 +6,51 @@
     <title>Social Media | Hawk Robotics</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/social-media.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/index.css">
     <script type="text/javascript" src="JavaScript/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 </head>
 
 <body>
-    <nav>
-        <img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo512x512.png" alt="The Hawk Robotics Program Logo" class="logo mobile">
-        <label class="logo-description mobile">Navigation</label>
-        <input type="checkbox" class="check" id="check-main" class="mobile">
-        <label for="check-main" class="checkbtn-main">
-            <div class="checkbtn-main-icon"></div>
-        </label>
-        <ul class="main-menu">
-            <li>
-                <input type="checkbox" class="check" id="check-about">
-                <label for="check-about" class="checkbtn">About</label>
-                <ul class="sub-menu">
-                    <li><a href="about-FIRST.html">About FIRST</a></li>
-                    <li><a href="wingspan.html">FRC Wingspan</a></li>
-                    <li><a href="FLL-team.html">Our FLL Teams</a></li>
-
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-resources">
-                <label for="check-resources" class="checkbtn">Resources</label>
-                <ul class="sub-menu">
-
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="handbook.html">Safety Handbook</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-gallery">
-                <label for="check-gallery" class="checkbtn">Gallery</label>
-                <ul class="sub-menu">
-
-                    <li><a href="photos.html">Photo Archive</a></li>
-                    
-                </ul>
-            </li>
-            <a href="index.html"><img src="SiteImages/HawkRoboticsLogos/HawkRoboticsLogo256x256.png" alt="The Hawk Robotics Program Logo" class="nav-image"></a>
-            <li>
-                <input type="checkbox" class="check" id="check-sponsors">
-                <label for="check-sponsors" class="checkbtn">Sponsors</label>
-                <ul class="sub-menu">
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-contact">
-                <label for="check-contact" class="checkbtn">Contact</label>
-                <ul class="sub-menu">
-                    <li><a href="social-media.html">Social Media</a></li>
-                   
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" class="check" id="check-outreach">
-                <label for="check-outreach" class="checkbtn">Outreach</label>
-                <ul class="sub-menu">
-                    <li><a href="past-events.html">Past Events</a></li>
-                    
-                </ul>
-            </li>
-        </ul>
-    </nav>
+     <!--Sidebar-->
+     <div class="sidenav" id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <header>
+            <img src="SiteImages\HawkRoboticsLogos\HawkRoboticsLogo256x256.png" width="150" height="150">
+            <span><strong>Wingspan Team#7431</strong></span>
+        </header>
+        <hr>
+        <a href="index.html">HOME</a>
+        <a href="about-FIRST.html">ABOUT FIRST</a>
+        <a href="photos.html">PHOTO GALLERY</a>
+        <a href="handbook.html">HANDBOOK</a>
+        <a href="calender.html">CALENDER</a>
+        <a href="social-media.html">REACH OUT</a>
+</div>
+<!--Open Sidebar-->
+<div type="button" class="openbtn" onclick="openSidebar()">
+<i class="fas fa-bars"></i>
+</div>
+<!--End of Sidebar-->
     <header>
         <img class="header-image" src="SiteImages/header.jpg">
         <h1>Hawk Robotics : Wingspan, Team 7431</h1>
     </header>
-    <style>
-        .list {
-            padding-top: 40px;
-            margin-left: auto;
-        }
-        .LogoAtBottom{
-            padding-top: 40px;
-            position: center;
-        }
-    </style>
-    <section class="row-text list">
+    <img src="SiteImages\HawkRoboticsLogos\HawkRoboticsLogo256x256.png" class="hawkimg">
+    <div class="social-container">
+        <h1>Contact Us!</h1>
+        <!--LINKS-->
         <ul>
-            <li>E-Mail: VieraHawkRobotics@gmail.com</li>
-            <li>Instagram: wingspan7431</li>
-            <li>YouTube: Viera Hawk Robotics</li>
-            <li>FaceBook: Viera Hawk Robotics</li>
-            <li>Twitter: wingspan7431</li>
-            <li>Twitch: wingpsan7431</li>
-        </ul>    
-    </section>
-    <div>
-        <img src="SiteImages\HawkRoboticsLogos\HawkRoboticsLogo64x64.png" class="LogoAtBottom">
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:VieraHawkRobotics@gmail.com">E-Mail: VieraHawkRobotics@gmail.com</a></li>
+            <li> <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/wingspan7431/">Instagram: wingspan7431</a></li>
+            <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/channel/UCqAsT1kBVjvLMipgsFOTFsw">YouTube: Viera Hawk Robotics</a></li>
+            <li><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/wingspan7431/">Facebook: Viera Hawk Robotics</a></li>
+            <li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/wingspan7431/status/1111029386155884546">Twitter: wingspan7431</a></li>
+            <li><i class="fa-brands fa-twitch"></i><a href="https://www.twitch.tv/wingspan7431">Twitch: wingpsan7431</a></li>
+        </ul> 
     </div>
+        
 </body>
 </html>
