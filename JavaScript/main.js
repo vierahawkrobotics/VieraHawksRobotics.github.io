@@ -20,8 +20,8 @@ window.onload = function () {
 }
 //Makes the sidebar work
 function openSidebar() {
-    document.getElementById('sidenav').style.width="250px";
+    document.getElementById('sidenav').style.width = "250px";
 }
 function closeSidebar() {
-    document.getElementById('sidenav').style.width="0px";
+    document.getElementById('sidenav').style.width = "0px";
 }
