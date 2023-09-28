@@ -78,6 +78,7 @@ p {
     transition: 0.5s;
     text-decoration: none;
     overflow-x: hidden;
+    white-space: nowrap;
 }
 
 .sidenav a {
