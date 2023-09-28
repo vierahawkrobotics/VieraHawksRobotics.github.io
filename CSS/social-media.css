@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .social-container {
     margin-left: auto;
     margin-right: auto;
@@ -13,21 +14,25 @@
     border-radius: 15%;
     margin-bottom: 30px;
 }
+
 .social-container h1 {
     display: block;
     text-align: center;
     padding-top: 20px;
 }
-.social-container li{
+
+.social-container li {
     display: block;
     list-style-type: none;
     font-size: 30px;
     padding-top: 10px;
     margin-left: 30px;
 }
-.social-container li i{
+
+.social-container li i {
     padding-right: 15px;
 }
-.social-container a:hover{
+
+.social-container a:hover {
     color: #20973a;
 }

@@ -3,27 +3,32 @@
     src: url("../Fonts/Raleway.ttf");
     font-weight: 100 900;
 }
+
 @font-face {
     font-family: "Raleway";
     src: url("../Fonts/Raleway-Italic.ttf");
     font-style: italic;
     font-weight: 100 900;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url("../Fonts/Montserrat/Montserrat-Regular.ttf");
     font-weight: 400;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url("../Fonts/Montserrat/Montserrat-Medium.ttf");
     font-weight: 500;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url("../Fonts/Montserrat/Montserrat-SemiBold.ttf");
     font-weight: 600;
 }
+
 :root {
     --rich-black: #121412;
     --alt-black: #1a1c1a;
@@ -32,11 +37,13 @@
     --light-green: #20973a;
     --light-yellow: #ffc933;
 }
+
 * {
     color: white;
     margin: 0;
     padding: 0;
 }
+
 body {
     background: var(--rich-black);
     font-family: "Raleway", "Arial", sans-serif;
@@ -44,20 +51,24 @@ body {
     overflow-x: hidden;
     font-size: 24px;
 }
+
 p {
-  text-indent:2em;
+    text-indent: 2em;
 }
+
 /* Navigation Styles */
 .openbtn {
     position: fixed;
-    z-index:1;
+    z-index: 1;
     color: #fff;
     font-size: 36px;
-    padding:10px;
+    padding: 10px;
 }
+
 .sidenav {
     height: 100%;
-    width: 0; /*chagnes with JS*/
+    width: 0;
+    /*chagnes with JS*/
     position: fixed;
     z-index: 2;
     top: 0;
@@ -66,8 +77,10 @@ p {
     background-color: #0d4411;
     transition: 0.5s;
     text-decoration: none;
-    overflow-x:hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
+
 .sidenav a {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -78,23 +91,27 @@ p {
     text-decoration: none;
     text-align: center;
 }
+
 .sidenav a:hover {
     background-color: #20973a;
 }
-.sidenav .closebtn{
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
 }
+
 /* Sidenav header */
 .sidenav header {
     background-color: #20973a;
-    height:235px;
-    overflow-y: hidden;   
+    height: 235px;
+    overflow-y: hidden;
 }
-.sidenav header span{
+
+.sidenav header span {
     font-size: 25px;
     font-family: inherit;
     padding-bottom: 5px;
@@ -102,28 +119,34 @@ p {
     padding-top: 5px;
     text-align: center;
 }
+
 .sidenav header img {
-    display:block;
+    display: block;
     padding-top: 10px;
     padding-bottom: 5px;
     margin-left: 50px;
 }
+
 /*Mobile Stuff*/
 @media only screen and (max-width:957px) {
     body {
         overflow-x: hidden;
     }
-    header{
+
+    header {
         width: 100%;
     }
 }
+
 /* End Navigation Styles */
 .l {
     background-color: var(--alt-black);
 }
+
 .d {
     background-color: var(--rich-black);
 }
+
 .row {
     align-items: center;
     display: flex;
@@ -131,23 +154,28 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .row-text {
     width: 65%;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .no-indent {
-  text-indent:0;
+    text-indent: 0;
 }
+
 .padding {
-    padding-top: 10px;    
+    padding-top: 10px;
 }
+
 .handbook {
     height: 80%;
     width: 80%;
     position: absolute;
     padding: 80px;
 }
+
 /*
 Uses alpha order for ordering properties
 Declarations ordered by placement in markup

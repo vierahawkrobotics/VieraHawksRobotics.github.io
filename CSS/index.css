@@ -3,6 +3,7 @@ header {
     overflow-x: hidden;
     position: relative;
 }
+
 img.header-image {
     height: 100%;
     left: 50%;
@@ -10,32 +11,37 @@ img.header-image {
     transform: translate(-50%, 0%);
     z-index: -1;
 }
+
 header h1 {
     background: rgba(0, 0, 0, 0.5);
     bottom: 0%;
-    font: 500 clamp(4.9vw, 4.9vw , 10px) "Montserrat", sans-serif;
+    font: 500 clamp(4.9vw, 4.9vw, 10px) "Montserrat", sans-serif;
     position: absolute;
     width: 100%;
     text-align: center;
 }
+
 /*Protects against extreme image scaling. Minimum image aspect ratio = 28:9*/
 @media only screen and (min-aspect-ratio: 21/9) {
     header {
         height: calc(900vw / 28);
     }
+
     /*header h1 {
         font-size: calc(45vw / 21);
     }*/
 }
-.featured{
+
+.featured {
     padding: 15px 0 15px 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    text-align: center; 
+    text-align: center;
 }
-.featured img{
+
+.featured img {
     padding: 10px 15px 10px 15px;
     background-color: #0d4411;
     border-radius: 50%;
@@ -43,19 +49,23 @@ header h1 {
     margin-right: auto;
     margin-left: auto;
     margin-top: 15px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
+
 h3 {
     font-size: 1.3em;
 }
+
 /* homepage */
 .homepage-row-img {
     width: 150px;
     height: 150px;
 }
+
 .homepage-column .homepage-row-img {
     margin: 0 auto;
 }
+
 .homepage-columns {
     width: 100%;
     display: flex;
@@ -64,6 +74,7 @@ h3 {
     margin-right: auto;
     margin-left: auto;
 }
+
 .homepage-column {
     display: flex;
     justify-content: center;
@@ -79,10 +90,12 @@ h3 {
     border-right: 0;
     border-left: 0;*/
 }
+
 .homepage-column-text {
     text-align: center;
     padding-top: 20px;
 }
+
 .homepage-column-line {
     background-color: white;
     width: 1px;
