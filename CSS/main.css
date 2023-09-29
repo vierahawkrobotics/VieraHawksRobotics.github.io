@@ -170,10 +170,9 @@ p {
 }
 
 .handbook {
-    height: 80%;
+    height: 100%;
     width: 80%;
-    position: absolute;
-    padding: 80px;
+    padding: 40px;
 }
 
 /*
